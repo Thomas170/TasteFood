@@ -22,6 +22,9 @@ export class RecipeComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       const recipeId = +params['recipeId'];
       this.recipe = data.find(recipe => recipe.id === recipeId);
+      if (!this.recipe?.ready) {
+        this.router.navigateByUrl('/');
+      }
     });
   }
 

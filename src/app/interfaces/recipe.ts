@@ -8,4 +8,5 @@ export interface Recipe {
   author: string,
   ingredients: string[],
   steps: Step[],
+  ready: boolean,
 }

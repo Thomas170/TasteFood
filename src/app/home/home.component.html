@@ -1,11 +1,12 @@
 <h1 class="title">Taste Food !</h1>
 
 <ul class="recipes">
-  <li class="recipe" *ngFor="let recipe of recipes;" (click)="selectRecipe(recipe.id)">
+  <li [class]="'recipe' + (!recipe.ready ? ' not-ready' : ' ready')" *ngFor="let recipe of recipes;" (click)="selectRecipe(recipe)">
     <img class="recipe__image" [src]="'assets/images/' + recipe.image" alt="Recipe image" height="2994" width="2805"/>
+    <p class="not-ready-message" *ngIf="!recipe.ready">Bientôt disponible</p>
     <div class="recipe__text">
       <p class="recipe__text__title">{{ recipe.title }}</p>
-      <p class="recipe__text__description">{{ recipe.description }}</p>
+      <p *ngIf="recipe.ready" class="recipe__text__description">{{ recipe.description }}</p>
       <p class="recipe__text__author">{{ recipe.author }}</p>
     </div>
   </li>

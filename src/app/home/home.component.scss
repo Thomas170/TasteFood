@@ -27,7 +27,6 @@
   display: flex;
   border-radius: 20px;
   position: relative;
-  transition: all 0.4s ease;
 
   &__image {
     height: 100%;
@@ -62,7 +61,25 @@
   }
 }
 
-.recipe:hover {
+.not-ready {
+  opacity: 0.6;
+  background-color: #d2d2d2;
+}
+
+.ready {
+  transition: all 0.4s ease;
+}
+
+.ready:hover {
   transform: scale(1.01);
   box-shadow: 4px 4px 6px 2px rgb(0, 0, 0, 0.3);
+}
+
+.not-ready-message {
+  position: absolute;
+  font-size: 1.8em;
+  color: #000000;
+  left: 40px;
+  top: 48px;
+  transform: rotate(-30deg);
 }

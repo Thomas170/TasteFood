@@ -47,12 +47,13 @@
         "icon": "serve.png",
         "content": "Une fois prêt, servir le riz et la préparation dans une assiette et ajouter un peu de graines de sésame. Enfin, vous pouvez déguster et savourer !"
       }
-    ]
+    ],
+    "ready": true
   },
   {
     "id": 2,
     "title": "Pâtes aux encornets (4 personnes)",
-    "image": "encornets.jpg",
+    "image": "default.jpeg",
     "description": "Plat de pâtes accompagné d'encornets et d'une sauce persillade.",
     "author": "Thomas",
     "ingredients": [
@@ -60,6 +61,63 @@
     ],
     "steps": [
 
-    ]
+    ],
+    "ready": false
+  },
+  {
+    "id": 3,
+    "title": "Pâtes aux chorizo (4 personnes)",
+    "image": "default.jpeg",
+    "description": "",
+    "author": "Thomas",
+    "ingredients": [
+
+    ],
+    "steps": [
+
+    ],
+    "ready": false
+  },
+  {
+    "id": 4,
+    "title": "Burritos (4 personnes)",
+    "image": "default.jpeg",
+    "description": "",
+    "author": "Thomas",
+    "ingredients": [
+
+    ],
+    "steps": [
+
+    ],
+    "ready": false
+  },
+  {
+    "id": 5,
+    "title": "Ramen (4 personnes)",
+    "image": "default.jpeg",
+    "description": "",
+    "author": "Thomas",
+    "ingredients": [
+
+    ],
+    "steps": [
+
+    ],
+    "ready": false
+  },
+  {
+    "id": 6,
+    "title": "Sushis (4 personnes)",
+    "image": "default.jpeg",
+    "description": "",
+    "author": "Thomas",
+    "ingredients": [
+
+    ],
+    "steps": [
+
+    ],
+    "ready": false
   }
 ]
