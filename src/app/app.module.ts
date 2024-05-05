@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import {NgOptimizedImage} from "@angular/common";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatIcon} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -12,11 +15,15 @@ import { RecipeComponent } from './recipe/recipe.component';
     HomeComponent,
     RecipeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage,
+        MatIcon,
+    ],
+  providers: [
+    provideAnimationsAsync()
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

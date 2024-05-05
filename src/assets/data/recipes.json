@@ -1,13 +1,65 @@
 [
   {
     "id": 1,
-    "title": "Porc aigre-doux",
-    "image": "",
-    "content": [
-
+    "title": "Porc aigre-doux (4 personnes)",
+    "image": "porc-aigre-doux.jpg",
+    "description": "Plat asiatique avec du porc et des légumes servi avec une sauce sucrée/salée aigre-douce. Le plat peut être accompagné d'une portion de riz.",
+    "author": "Thomas",
+    "ingredients": [
+      "2 échines de porc",
+      "1 poivron rouge",
+      "1 poivron vert",
+      "1 carotte",
+      "1 oignon rouge",
+      "1 gousse d'ail hachée",
+      "riz",
+      "graines de sésame",
+      "sauce rouleaux de printemps Ayam (ou sauce aigre-doux)",
+      "sauce soja",
+      "maïzena"
+    ],
+    "steps": [
+      {
+        "icon": "cut.png",
+        "content": "Couper les échines de porc en petits morceaux. Hâcher l'ail."
+      },
+      {
+        "icon": "mix.png",
+        "content": "Mélanger la viande avec l'ail. Rajouter de la sauce soja et de la maïzena puis laisser mariner pendant quelques temps."
+      },
+      {
+        "icon": "cut.png",
+        "content": "Couper les poivrons en cube. Couper les oignons et les carottes en fines lamelles."
+      },
+      {
+        "icon": "cook.png",
+        "content": "Faire cuire le riz car cela peut prendre du temps. Faire chauffer un bain d'huile dans une poêle puis y ajouter les morceaux d'échine de porc pour les faire frire. Une fois cuits, retirer les et reserver les."
+      },
+      {
+        "icon": "cook.png",
+        "content": "Dans une poêle, faire cuire les oignons. Une fois qu'ils commencent à devenir transparents, rajouter les poivrons et les carottes."
+      },
+      {
+        "icon": "cook.png",
+        "content": "Après quelques temps, ajouter la viande et la sauce aigre-douce. Mélanger et attender que ça mijotte encore un peu à feu très doux. Saler et poivrer si besoin."
+      },
+      {
+        "icon": "serve.png",
+        "content": "Une fois prêt, servir le riz et la préparation dans une assiette et ajouter un peu de graines de sésame. Enfin, vous pouvez déguster et savourer !"
+      }
     ]
   },
   {
+    "id": 2,
+    "title": "Pâtes aux encornets (4 personnes)",
+    "image": "encornets.jpg",
+    "description": "Plat de pâtes accompagné d'encornets et d'une sauce persillade.",
+    "author": "Thomas",
+    "ingredients": [
 
+    ],
+    "steps": [
+
+    ]
   }
 ]

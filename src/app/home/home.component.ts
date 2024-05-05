@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-//import recipes from '@assets/data/recipes.json';
+import {Recipe} from '../interfaces/recipe';
+import data from '../../assets/data/recipes.json';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  protected readonly recipes = [];
+
+  protected readonly recipes: Recipe[] = data;
+
+  constructor(private router: Router) {
+  }
+
+  protected selectRecipe(recipeId: number): void {
+    this.router.navigateByUrl('/recipe/' + recipeId);
+  }
 }

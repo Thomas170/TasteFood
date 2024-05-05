@@ -1,8 +1,12 @@
-<h1>Welcome to Taste Food!</h1>
-<ul>
-  @for (item of recipes; track item.name) {
-    <li>{{ item.name }}</li>
-  } @empty {
-    <li>There are no items.</li>
-  }
+<h1 class="title">Taste Food !</h1>
+
+<ul class="recipes">
+  <li class="recipe" *ngFor="let recipe of recipes;" (click)="selectRecipe(recipe.id)">
+    <img class="recipe__image" [src]="'assets/images/' + recipe.image" alt="Recipe image" height="2994" width="2805"/>
+    <div class="recipe__text">
+      <p class="recipe__text__title">{{ recipe.title }}</p>
+      <p class="recipe__text__description">{{ recipe.description }}</p>
+      <p class="recipe__text__author">{{ recipe.author }}</p>
+    </div>
+  </li>
 </ul>

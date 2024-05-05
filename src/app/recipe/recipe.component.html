@@ -1,1 +1,29 @@
-<p>recipe works!</p>
+<div class="header">
+  <button class="back-button" (click)="goToHomePage()">Retour</button>
+  <h1 class="title">{{recipe?.title}}</h1>
+</div>
+
+<img class="image" [src]="'assets/images/' + recipe?.image" alt="Recipe image" />
+
+<h3 class="subtitle">Liste des ingrédients :</h3>
+<ul class="ingredients">
+  <li class="ingredient" *ngFor="let ingredient of recipe?.ingredients; let index = index;">
+    <p class="ingredient__content">{{ingredient}}</p>
+  </li>
+</ul>
+
+<br/>
+
+<h3 class="subtitle">Étapes de préparation :</h3>
+<ul class="steps">
+  <li class="step" *ngFor="let step of recipe?.steps; let index = index;">
+    <div class="step__icon-container">
+      <img
+        class="step__icon"
+        [src]="'assets/icons/' + step.icon"
+        alt="Icon image"
+      />
+    </div>
+    <p class="step__content">{{step.content}}</p>
+  </li>
+</ul>
