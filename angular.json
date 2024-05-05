@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "taste-book:build:production"
+              "buildTarget": "taste-book:build:production"
             },
             "development": {
-              "browserTarget": "taste-book:build:development"
+              "buildTarget": "taste-book:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "taste-book:build"
+            "buildTarget": "taste-book:build"
           }
         },
         "test": {
